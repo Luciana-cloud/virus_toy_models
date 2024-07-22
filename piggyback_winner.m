@@ -30,7 +30,7 @@ K_i  = q(3); % Coefficient of deactivation [1/d]
 uptake_B     = mu_B*C_B_a*C_S*(K_B + C_S)^(-1);
 growth_B     = Y * uptake_B;
 growth_V     = mu_V*C_B_a*C_V;
-decay_B      = d_B*C_B_a*C_V;
+decay_B      = d_B*C_B_a;
 decay_V      = d_V*C_V;
 tau          = 1/(exp((C_V_T - C_V)/(n*C_V_T)) + 1);
 activation   = tau*K_a*C_B_i;
@@ -42,7 +42,7 @@ vf_      = zeros(5,1);
 vf_(1)   = growth_B - decay_B + activation - deactivation; % Active Microbial Biomass [mgC/ml]
 vf_(2)   = deactivation - activation; % Dormant Microbial Biomass [mgC/ml]
 vf_(3)   = growth_V - decay_V; % Viral Biomass [mgC/ml]
-vf_(4)   = uptake_B + g*(decay_B + decay_V); % Soil organic matter (substrate) [mgC/ml]
-vf_(5)   = (1 - Y)*uptake_B - (1 - g)*(decay_B + decay_V); % CO2 [mgC/ml]
+vf_(4)   = -uptake_B + g*(decay_B + decay_V); % Soil organic matter (substrate) [mgC/ml]
+vf_(5)   = (1 - Y)*uptake_B + (1 - g)*(decay_B + decay_V); % CO2 [mgC/ml]
 
 end
