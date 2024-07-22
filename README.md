@@ -2,4 +2,4 @@
 
 1. Model 1: Kill the Winner
 2. Model 2: Piggyback the Winner
-3. Model 3: Switch model
+3. Model 3: Lytic and lysogenic dynamics
