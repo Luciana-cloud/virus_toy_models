@@ -8,20 +8,6 @@ o_opts = odeset('AbsTol',abstol,'RelTol',reltol,'Events',@stopevent,'NonNegative
 % Time vector (h)
 tspan   = [0 100];
 
-% Parameters  
-% p(1)  = 0.7;  % Growth rate coefficient for non-infected microbes [1/h]
-% p(2)  = 0.1;  % Growth rate coefficient for Lysogenic microbes [1/h]
-% p(3)  = 5;    % Saturation constant for non-infected and Lysogenic microbes [µgC/ml]
-% p(4)  = 0.3;  % Efficiency [-]
-% p(5)  = 0.1;  % Dead rate coefficient for non-infected microbes [1/h]
-% p(6)  = 0.2;  % Dead rate coefficient for Lysogenic microbes [1/h]
-% p(7)  = 0.4;  % Dead rate coefficient for Lytic microbes [1/h]
-% p(8)  = 0.2;  % Dead rate coefficient for virus [1/h]
-% p(9)  = 1e-2; % Rate of absorption of virus population to hosts [1/h]
-% p(10) = 1e-2; % Induction rate [1/h]
-% p(11) = 0.2;  % Fraction of dead biomass sorbed onto soils [-] 
-% p(12) = 1e-2; % Fraction of cells that undergo lysogenic infection [-]
-
 % Fixed parameters
 W_V = (0.055 + 0.2)*1e-9/2; % Weight of virus in C [µgC/particle] [0.055 - 0.2 fg/particle]
 W_B = (50 + 250)*1e-9/2;    % Weight of Host in C (Bacteria as reference) [µgC/particle] [50 - 250 fg/cell]
