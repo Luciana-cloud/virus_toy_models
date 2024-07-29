@@ -35,7 +35,7 @@ ylabel('Virus - to - Microbes Ratio')
 subplot(2,2,3);
 plot(Time,SOM)
 xlabel('Time (hr)')
-ylabel('Soil Organic Matter (µgC/ml)')
+ylabel('Carbon Substrate (µgC/ml)')
 yyaxis right
 plot(Time,Necromass)
 ylabel('Necromass (µgC/ml)')
@@ -88,7 +88,7 @@ ylabel('Virus - to - Microbes Ratio')
 subplot(2,2,3);
 plot(Time,SOM)
 xlabel('Time (hr)')
-ylabel('Soil Organic Matter (µgC/ml)')
+ylabel('Carbon Substrate (µgC/ml)')
 yyaxis right
 plot(Time,Necromass)
 ylabel('Necromass (µgC/ml)')
@@ -145,7 +145,7 @@ ylabel('Virus - to - Microbes Ratio')
 subplot(2,2,3);
 plot(Time,SOM)
 xlabel('Time (hr)')
-ylabel('Soil Organic Matter (µgC/ml)')
+ylabel('Carbon Substrate (µgC/ml)')
 yyaxis right
 plot(Time,Necromass)
 ylabel('Necromass (µgC/ml)')
