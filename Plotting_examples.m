@@ -44,8 +44,10 @@ subplot(2,2,4);
 plot(Time,CO2)
 xlabel('Time (hr)')
 ylabel('CO2')
-
+fontsize(fig, 24, "points")
+%%
 saveas(fig,'C:\luciana_datos\UCI\Project_12 (Fire modeling project)\virus_paper\virus_toy_models\Figures\kill_winner_simple.png')
+saveas(fig,'C:\luciana_datos\UCI\Project_12 (Fire modeling project)\virus_paper\virus_toy_models\Figures\kill_winner_simple.pdf')
 
 %% Piggyback the winner %%
 
@@ -97,8 +99,11 @@ subplot(2,2,4);
 plot(Time,CO2)
 xlabel('Time (hr)')
 ylabel('CO2')
+fontsize(fig1, 24, "points")
 
+%%
 saveas(fig1,'C:\luciana_datos\UCI\Project_12 (Fire modeling project)\virus_paper\virus_toy_models\Figures\piggyback_winner.png')
+saveas(fig1,'C:\luciana_datos\UCI\Project_12 (Fire modeling project)\virus_paper\virus_toy_models\Figures\piggyback_winner.pdf')
 
 %% Lytic-lysogenic %%
 
@@ -154,7 +159,11 @@ subplot(2,2,4);
 plot(Time,CO2)
 xlabel('Time (hr)')
 ylabel('CO2')
+fontsize(fig2, 24, "points")
+
+%%
 
 saveas(fig2,'C:\luciana_datos\UCI\Project_12 (Fire modeling project)\virus_paper\virus_toy_models\Figures\Lytic_lysogenic.png')
+saveas(fig2,'C:\luciana_datos\UCI\Project_12 (Fire modeling project)\virus_paper\virus_toy_models\Figures\Lytic_lysogenic.pdf')
 
 %%
